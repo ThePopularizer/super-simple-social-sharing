@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name:	ThePopularizer Social Sharing Buttons
-Plugin URI:		https://thepopularizer.com
-Description:	Social Buttons by ThePopularizer.
+Plugin Name:	Simple Social Sharing Buttons
+Plugin URI:		https://github.com/ThePopularizer/popularizer-social
+Description:	Light-weight (scriptless) social sharing buttons.
 Version:		1.0
 Author:			ThePopularizer
 Author URI:		https://thepopularizer.// COMBAK:
