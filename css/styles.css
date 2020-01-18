@@ -41,7 +41,10 @@
   margin-left: -3.5px;
   margin-bottom: -5px;
 }
-
+.social-share img {
+  width: 16px;
+  height: 16px; 
+}
 .social-share .facebook a {
   background-color: #1877f2;
   border-radius: 0 5px 0 0;

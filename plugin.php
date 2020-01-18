@@ -3,7 +3,7 @@
 Plugin Name:	Super Simple Social Sharing Buttons
 Plugin URI:		https://github.com/ThePopularizer/popularizer-social
 Description:	Light-weight (scriptless) social sharing buttons.
-Version:		1.0
+Version:		1.0.1
 Author:			ThePopularizer
 Author URI:		https://thepopularizer.// COMBAK:
 License:		GPL-2.0+
@@ -24,6 +24,10 @@ along with This plugin. If not, see {URI to Plugin License}.
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
+
+if ( is_admin() ) {
+	return;
+}
 
 function add_social_stylesheet() {
 	wp_enqueue_style( 'social-button', plugin_dir_url( __FILE__ ) . 'css/styles.css' );
