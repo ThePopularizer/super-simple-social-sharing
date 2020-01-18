@@ -25,6 +25,13 @@ along with This plugin. If not, see {URI to Plugin License}.
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+require 'plugin-update-checker/plugin-update-checker.php';
+$MyUpdateChecker = Puc_v4p8_Factory::buildUpdateChecker(
+'https://raw.githubusercontent.com/ThePopularizer/popularizer-social/master/sync.json',
+__FILE__,
+'plugin'
+);
+
 function add_social_stylesheet() {
 	wp_enqueue_style( 'social-button', plugin_dir_url( __FILE__ ) . 'css/styles.css' );
 }
