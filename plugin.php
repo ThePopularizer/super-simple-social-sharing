@@ -54,7 +54,7 @@ function social_share_buttons( $atts ){
 			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>icons/facebook.svg"/>
 	  </a></li>
 	  <li class="twitter">
-			<a rel="nofollow" href="https://twitter.com/intent/tweet?text=Auckland%20Store&amp;url=<?php echo $url; ?>" target="_blank">
+			<a rel="nofollow" href="https://twitter.com/intent/tweet?text=&amp;url=<?php echo $url; ?>" target="_blank">
 			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>icons/twitter.svg"/>
 	  </a></li>
 	  <li class="linkedin">
