@@ -24,3 +24,44 @@ along with This plugin. If not, see {URI to Plugin License}.
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
+
+function add_social_stylesheet() {
+	wp_enqueue_style( 'social-button', plugin_dir_url( __FILE__ ) . 'css/styles.css' );
+}
+add_action( 'wp_enqueue_scripts', 'add_social_stylesheet', 10);
+
+function social_share_buttons( $atts ){
+	$url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}/{$_SERVER['REQUEST_URI']}";
+	$title = get_the_title();
+	$a = shortcode_atts( array(
+			'colour' => 'light',
+			'placement' => 'top',
+			'title' => 'Share This Page!',
+			'orientation' => 'vertical',
+			'position' => 'fixed',
+	), $atts );
+	// ob_start();
+	?>
+	<ul class="social-share <?php echo $a['display'] ?> flex-<?php echo $a['orientation'] ?> <?php echo $a['position'] ?>" data-toggle="tooltip" data-colour="<?php echo $a['colour'] ?>" data-placement="<?php echo $a['placement'] ?>" data-original-title="<?php echo $a['title'] ?>">
+	  <li class="facebook">
+	    <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" target="_blank">
+	    <span class="fa fa-facebook"></span>
+	  </a></li>
+	  <li class="twitter">
+			<a rel="nofollow" href="https://twitter.com/intent/tweet?text=Auckland%20Store&amp;url=<?php echo $url; ?>" target="_blank">
+			<span class="fa fa-twitter"></span>
+	  </a></li>
+	  <li class="linkedin">
+			<a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=<?php echo $url; ?>&amp;title=<?php echo $title; ?>&amp;mini=true" target="_blank">
+	    <span class="fa fa-linkedin"></span>
+	  </a></li>
+	  <li class="email">
+			<a rel="nofollow" href="mailto:?subject=Auckland%20Store&amp;body=<?php echo $url; ?>" target="_blank">
+	    <span class="fa fa-mail"></span>
+	  </a></li>
+	</ul>
+	<?php
+	// return ob_get_clean();
+}
+add_action('wp_footer', 'social_share_buttons');
+add_shortcode( 'social-share', 'social_share_buttons' );

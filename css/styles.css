@@ -1,0 +1,49 @@
+.social-share {
+  z-index: 9999; 
+}
+.social-share a {
+  color: white;
+  padding: 10px 3px;
+  transition: 0.3s;
+}
+
+.social-share .facebook a {
+  background-color: #1877f2;
+  border-radius: 0 5px 0 0;
+}
+
+.social-share .twitter a {
+  background-color: #1da1f2;
+}
+
+.social-share .linkedin a {
+  background-color: #007bb5;
+}
+
+.social-share .email a {
+  background-color: #25d366;
+  border-radius: 0 0 5px 0;
+}
+
+.social-share a:hover {
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.social-share li {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-share.fixed {
+  top: 50%;
+  left: 0;
+  position: fixed;
+}
+
+.social-share {
+  padding: 0;
+  margin: 0;
+}
