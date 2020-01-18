@@ -41,8 +41,11 @@ function social_share_buttons( $atts ){
 			'position' => 'fixed',
 	), $atts );
 	?>
-	<ul class="social-share <?php echo $a['display'] ?> flex-<?php echo $a['orientation'] ?> <?php echo $a['position'] ?>" data-toggle="tooltip" data-colour="<?php echo $a['colour'] ?>" data-placement="<?php echo $a['placement'] ?>" data-original-title="<?php echo $a['title'] ?>">
-	  <li class="facebook">
+	<ul class="social-share <?php echo $a['display'] ?> flex-<?php echo $a['orientation'] ?> <?php echo $a['position'] ?>" >
+		<li class="share-tooltip">
+			<span><?php echo $a['title'] ?></span>
+		</li>
+		<li class="facebook">
 	    <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" target="_blank">
 			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>icons/facebook.svg"/>
 	  </a></li>
@@ -55,7 +58,7 @@ function social_share_buttons( $atts ){
 			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>icons/linkedin.svg"/>
 	  </a></li>
 	  <li class="email">
-			<a rel="nofollow" href="mailto:?subject=Auckland%20Store&amp;body=<?php echo $url; ?>" target="_blank">
+			<a rel="nofollow" href="mailto:?subject=<?php echo wp_title(''); ?>&amp;body=<?php echo $url; ?>" target="_blank">
 			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>icons/mail.svg"/>
 	  </a></li>
 	</ul>
