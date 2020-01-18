@@ -1,0 +1,10 @@
+{
+"name" : "ThePopularizer Social Sharing Buttons",
+"slug" : "plugin",
+"download_url" : "https://github.com/ThePopularizer/popularizer-social/archive/master.zip",
+"version" : "1.0",
+"author" : "ThePopularizer",
+"sections" : {
+"description" : "Light, scriptless social buttons for WP."
+}
+}

@@ -45,19 +45,26 @@ function social_share_buttons( $atts ){
 	<ul class="social-share <?php echo $a['display'] ?> flex-<?php echo $a['orientation'] ?> <?php echo $a['position'] ?>" data-toggle="tooltip" data-colour="<?php echo $a['colour'] ?>" data-placement="<?php echo $a['placement'] ?>" data-original-title="<?php echo $a['title'] ?>">
 	  <li class="facebook">
 	    <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>" target="_blank">
-	    <span class="fa fa-facebook"></span>
+	    <!-- <span class="fa fa-facebook"></span> -->
+			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>images/facebook.svg"/>
+			<!-- <svg>
+			 <use xlink:href="<?php echo plugin_dir_url( __FILE__ ) ?>images/facebook.svg" />
+		 </svg> -->
 	  </a></li>
 	  <li class="twitter">
 			<a rel="nofollow" href="https://twitter.com/intent/tweet?text=Auckland%20Store&amp;url=<?php echo $url; ?>" target="_blank">
-			<span class="fa fa-twitter"></span>
+			<!-- <span class="fa fa-twitter"></span> -->
+			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>images/twitter.svg"/>
 	  </a></li>
 	  <li class="linkedin">
 			<a rel="nofollow" href="https://www.linkedin.com/shareArticle?url=<?php echo $url; ?>&amp;title=<?php echo $title; ?>&amp;mini=true" target="_blank">
-	    <span class="fa fa-linkedin"></span>
+	    <!-- <span class="fa fa-linkedin"></span> -->
+			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>images/linkedin.svg"/>
 	  </a></li>
 	  <li class="email">
 			<a rel="nofollow" href="mailto:?subject=Auckland%20Store&amp;body=<?php echo $url; ?>" target="_blank">
-	    <span class="fa fa-mail"></span>
+	    <!-- <span class="fa fa-mail"></span> -->
+			<img src="<?php echo plugin_dir_url( __FILE__ ) ?>images/mail.svg"/>
 	  </a></li>
 	</ul>
 	<?php

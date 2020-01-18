@@ -1,9 +1,9 @@
 .social-share {
-  z-index: 9999; 
+  z-index: 9999;
 }
 .social-share a {
   color: white;
-  padding: 10px 3px;
+  padding: 10px 5px;
   transition: 0.3s;
 }
 
