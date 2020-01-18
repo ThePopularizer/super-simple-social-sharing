@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name:	Simple Social Sharing Buttons
+Plugin Name:	Super Simple Social Sharing Buttons
 Plugin URI:		https://github.com/ThePopularizer/popularizer-social
 Description:	Light-weight (scriptless) social sharing buttons.
 Version:		1.0
