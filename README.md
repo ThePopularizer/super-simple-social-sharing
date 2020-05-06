@@ -28,8 +28,7 @@ Not out of the box; it's a Super Simple™ plugin. You'd have to use something l
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is stored in the /assets directory.
-2. This is the second screen shot
+1. Mouse hover displays the tooltip and widens the button.  
 
 == Changelog ==
 
