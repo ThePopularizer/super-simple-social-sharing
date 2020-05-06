@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Super Simple Social Buttons ===
 Contributors: thepopularizer
 Donate link: https://www.buymeacoffee.com/popularizer
 Tags: social sharing, social share, social media, social, 
