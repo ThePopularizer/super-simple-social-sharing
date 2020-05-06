@@ -24,7 +24,7 @@ Light-weight, scriptless social buttons for WP.
 
 = Can I load it only on certain pages or post types? =
 
-Not out of the box; it's a Super Simple™ plugin. You'd have to use something like Plugin Load Filter to do that. 
+Not out of the box; it's a Super Simple™ plugin. You'd have to use something like [Plugin Load Filter](https://wordpress.org/plugins/plugin-load-filter/) to do that. 
 
 == Screenshots ==
 
